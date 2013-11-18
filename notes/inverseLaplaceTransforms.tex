@@ -33,17 +33,17 @@
   \begin{columns}
     \column{.5\textwidth}
     \begin{eqnarray*}
-      \laplace{t^n}    & = & \frac{n!}{s^{n+1}} \\ 
-      \laplace{e^{at}} & = & \frac{1}{s-a} \\ 
+      \laplace{t^n}    & = & \frac{n!}{s^{n+1}} \\
+      \laplace{e^{at}} & = & \frac{1}{s-a} \\
       \laplace{\sin(\omega t)} & = & \frac{\omega}{s^2+\omega^2} \\
-      \laplace{\cos(\omega t)} & = & \frac{s}{s^2+\omega^2} \\ 
+      \laplace{\cos(\omega t)} & = & \frac{s}{s^2+\omega^2} \\
     \end{eqnarray*}
 
     \column{.5\textwidth}
     \begin{eqnarray*}
-      \laplace{f(t)}  & = & \int^\infty_0 f(t) e^{-st} ~ dt \\ 
+      \laplace{f(t)}  & = & \int^\infty_0 f(t) e^{-st} ~ dt \\
       \laplace{t^nf(t)} & = & (-1)^n\frac{d^n}{ds^n}F(s) \\
-      \laplace{e^{at}f(t)} & = & F(s-a) 
+      \laplace{e^{at}f(t)} & = & F(s-a)
     \end{eqnarray*}
 
   \end{columns}
@@ -62,7 +62,7 @@
      \vspace{2em}
      \begin{tabular}{ll}
        A: &  $\frac{1}{s+3}$ \\ [12pt]
-       B: &  $\frac{1}{s-3}$ 
+       B: &  $\frac{1}{s-3}$
      \end{tabular}
 
      \vfill
@@ -75,7 +75,7 @@
      \vspace{2em}
      \begin{tabular}{ll}
        A: &  $\frac{1}{s+3}$ \\ [12pt]
-       B: &  $\frac{1}{s-3}$ 
+       B: &  $\frac{1}{s-3}$
      \end{tabular}
 
    \vfill
@@ -195,7 +195,7 @@
 
 \begin{frame}
 
-  
+
     \begin{eqnarray*}
       \laplace{t^n} & = & \frac{n!}{s^{n+1}}, \\ [10pt]
       \Rightarrow n & = & 3, \\
@@ -327,7 +327,7 @@
         g(t) & = & e^{-t}\lp \redText{\cos(4t)} - \blueText{\frac{1}{4}\sin(4t)}\rp.
       \end{eqnarray*}
     }
-  
+
 
 \end{frame}
 
@@ -355,7 +355,7 @@
         g(t) & = & \redText{3e^{-2t}\cos(5t)} - \blueText{\frac{6}{5}e^{-2t}\sin(5t)}-\fuchsiaText{2e^{2t}}.
       \end{eqnarray*}
     }
-  
+
 
 \end{frame}
 
@@ -380,11 +380,11 @@
     \uncover<3->
     {
       \begin{eqnarray*}
-        g(t) & = & \redText{\frac{2}{9}} + \blueText{\frac{1}{9}t} - 
+        g(t) & = & \redText{\frac{2}{9}} + \blueText{\frac{1}{9}t} -
                    \fuchsiaText{\frac{2}{9}\cos(3t)} - \greenText{\frac{1}{27} \sin(3t)}.
       \end{eqnarray*}
     }
-  
+
 
 \end{frame}
 
@@ -411,7 +411,7 @@
         g(t) & = & t \sin(4t).
       \end{eqnarray*}
     }
-  
+
 
 \end{frame}
 
@@ -426,9 +426,9 @@
     {
       \begin{eqnarray*}
         \laplace{g} & = & \frac{8s^3-5s^2-12}{s^4-16}, \\
-        & = & \frac{82^3-5s^2-12}{(s-2)(s+2)(s^2+4)}, \\
+        & = & \frac{8s^3-5s^2-12}{(s-2)(s+2)(s^2+4)}, \\
         & = & \frac{a}{s-2} + \frac{b}{s+2} + \frac{cs+d}{s^2+4}, \\
-        & = & \redText{\frac{1}{s-2}} + \blueText{\frac{3}{s+2}} + 
+        & = & \redText{\frac{1}{s-2}} + \blueText{\frac{3}{s+2}} +
               \fuchsiaText{4 \frac{s}{s^2+4}} - \greenText{\frac{1}{2}\cdot\frac{2}{s^2+4}}.
       \end{eqnarray*}
     }
@@ -439,7 +439,7 @@
         g(t) & = & \redText{e^{2t}} + \blueText{3e^{-2t}} + \fuchsiaText{4\cos(2t)} - \greenText{\half\sin(2t)}.
       \end{eqnarray*}
     }
-  
+
 
 \end{frame}
 
