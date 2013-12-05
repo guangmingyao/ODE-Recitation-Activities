@@ -4,7 +4,7 @@
 
 \title{Ordinary Differential Equations}
 \subtitle{Math 232 - Revenge of the Method of Undetermined Coefficients}
-\date{17 Oct 2012}
+\date{4 Oct 2013}
 
 \begin{frame}
   \titlepage
@@ -12,7 +12,7 @@
 
 \begin{frame}
   \frametitle{Outline}
-  \tableofcontents[pausesection,hideothersubsections]
+  \tableofcontents[ currentsection ]
 \end{frame}
 
 
@@ -68,7 +68,7 @@
         \vfill
 
      }\fi
-   
+
      \ifnum\value{clickerQuiz}=3{%
          \vfill
 
@@ -90,7 +90,7 @@
         \vfill
 
     }\fi
-  
+
 
 \end{frame}
 }
@@ -176,24 +176,35 @@
 
 \begin{frame}
   \frametitle{Particular Solution}
-  
+
+  \vspace*{-3em}
   \begin{eqnarray*}
     y_p & = & A t^2 e^{-2t}, \\
     y_p' & = & -2 A t^2 e^{-2t} + A 2t e^{-2t}, \\
     y_p'' & = & 4 A t^2 e^{-2t} - 8A t e^{-2t} + 2 A e^{-2t}.
   \end{eqnarray*}
-
+  \vspace*{-2.5em}
   \uncover<2->{%
     \begin{eqnarray*}
-      \redText{y_p''} + 4\blueText{y_p'} + 4y_p & = & 5 e^{-2t}, \\
-      \redText{4 A t^2 e^{-2t} - 8A t e^{-2t} + 2 A e^{-2t}} & & \\
-      + 4 \blueText{\lp -2 A t^2 e^{-2t} + A 2t e^{-2t} \rp} & & \\
-      + 4 A t^2 e^{-2t} & = & 5 e^{-2t} \\
-      2 A e^{-2t} & = & 5 e^{-2t} \\
-      A & = & \frac{5}{2}, \\
-      \blueText{y_p(t)} & \blueText{=} & \blueText{\frac{5}{2} t^2 e^{-2t}}.
+      \begin{array}{rcccccl}
+        \redText{y_p''} & + & 4\blueText{y_p'} & + & 4y_p & = & 5 e^{-2t}, \\ [5pt]  \hline
+        ~ \\
+        \redText{4 A t^2 e^{-2t}} & \redText{-} & \redText{8A t e^{-2t}} & \redText{+} & \redText{2 A e^{-2t}} & & \\
+      + 4 \blueText{\lp -2 A t^2 e^{-2t}\right.} & \blueText{+} &  \blueText{\left.  A 2t e^{-2t} \rp}  & & \\
+      + 4 A t^2 e^{-2t} &&&&& = & 5 e^{-2t} \\
+      \end{array} 
     \end{eqnarray*}
+
+    \uncover<3->{%
+      \begin{eqnarray*}
+        2 A e^{-2t} & = & 5 e^{-2t} \\
+        A & = & \frac{5}{2}, \\
+        \blueText{y_p(t)} & \blueText{=} & \blueText{\frac{5}{2} t^2 e^{-2t}}.
+      \end{eqnarray*}
+    }
   }
+
+
 
 
 \end{frame}
@@ -259,7 +270,7 @@
         \vfill
 
      }\fi
-   
+
      \ifnum\value{clickerQuiz}=3{%
        \vfill
 
@@ -279,7 +290,7 @@
         \vfill
 
     }\fi
-  
+
 
 \end{frame}
 }
@@ -329,7 +340,7 @@
       y & = & C_1 t^{r_1} + C_2 t^{r_2}.
     \end{eqnarray*}
   }
-    
+
 
 \end{frame}
 
@@ -467,7 +478,7 @@
       y & = & \lp \fuchsiaText{t^2 + C_1 t + C_2} \rp e^{-t}
     \end{eqnarray*}
   }
-  
+
 \end{frame}
 
 
@@ -484,9 +495,9 @@
   {
     Let
     \begin{eqnarray*}
-      y_p & = & u(t) y_1(t), \\
-      \uncover<3->{y_p' & = & \redText{u'(t) y_1(t) + u(t) y_1'(t)}} \\
-      \uncover<4->{y_p'' & = & \blueText{u''(t) y_1(t) + 2 u'(t) y_1'(t) + u(t) y_1''(t)}}
+      y & = & u(t) y_1(t), \\
+      \uncover<3->{y' & = & \redText{u'(t) y_1(t) + u(t) y_1'(t)}} \\
+      \uncover<4->{y'' & = & \blueText{u''(t) y_1(t) + 2 u'(t) y_1'(t) + u(t) y_1''(t)}}
     \end{eqnarray*}
   }
 
